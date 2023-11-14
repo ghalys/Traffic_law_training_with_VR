@@ -169,7 +169,7 @@ public class VehicleCamera : MonoBehaviour
 
         ShowCarUI();
 
-        GetComponent<Camera>().fieldOfView = Mathf.Clamp(carScript.speed / 10.0f + 60.0f, 60, 90.0f);
+        // GetComponent<Camera>().fieldOfView = Mathf.Clamp(carScript.speed / 10.0f + 60.0f, 60, 90.0f);
 
 
 

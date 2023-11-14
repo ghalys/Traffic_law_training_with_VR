@@ -165,6 +165,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7278615720280673772}
     m_Modifications:
+    - target: {fileID: 265823699063256714, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516263216458837462, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516791291022600544, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101255125094492497, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102909649319767527, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213386040871399521, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215109902504391895, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526826797895207499, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989921372327910160, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5991504085775015846, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6567435756083206218, guid: 9ab40437cc2d3214f983cdab1a95fab6, type: 3}
       propertyPath: m_Name
       value: Road (1)
