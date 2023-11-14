@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Priorit\xE9.unity"
+    guid: 3e54e4fd4069f7c4ab7a4c13ad2718dc
   m_configObjects: {}
