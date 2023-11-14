@@ -7,6 +7,16 @@ TagManager:
   - Street
   - Grass
   - Sideway
+  - Region
+  - HumanType
+  - Human
+  - HumanPoint
+  - PedestrianSound
+  - StaticVehiclePoint
+  - Vehicle
+  - LeftWheel
+  - RightWheel
+  - VehiclePoint
   layers:
   - Default
   - TransparentFX
