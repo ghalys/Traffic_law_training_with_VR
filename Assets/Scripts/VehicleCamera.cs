@@ -216,8 +216,6 @@ public class VehicleCamera : MonoBehaviour
 
     float AdjustLineOfSight(Vector3 target, Vector3 direction)
     {
-
-
         RaycastHit hit;
 
         if (Physics.Raycast(target, direction, out hit, distance, lineOfSightMask.value))

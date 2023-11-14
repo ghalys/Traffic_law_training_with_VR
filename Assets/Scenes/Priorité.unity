@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &11944656
 Transform:
   m_ObjectHideFlags: 0
@@ -300,9 +300,9 @@ GameObject:
   - component: {fileID: 166365445}
   - component: {fileID: 166365444}
   - component: {fileID: 166365443}
-  - component: {fileID: 166365447}
   - component: {fileID: 166365446}
   - component: {fileID: 166365448}
+  - component: {fileID: 166365449}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -368,8 +368,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166365442}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.00000011920929, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -391,7 +391,25 @@ MonoBehaviour:
   Cars:
   - {fileID: 2147465351}
   MyCamera: {fileID: 166365445}
---- !u!114 &166365447
+--- !u!114 &166365448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166365442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
+--- !u!114 &166365449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -411,26 +429,8 @@ MonoBehaviour:
   cameraSwitchView: []
   lineOfSightMask:
     serializedVersion: 2
-    m_Bits: 53
+    m_Bits: 0
   Switch: 0
---- !u!114 &166365448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166365442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 2
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 0
 --- !u!1001 &221234268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,7 +725,6 @@ GameObject:
   m_Component:
   - component: {fileID: 551921007}
   - component: {fileID: 551921006}
-  - component: {fileID: 551921008}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -766,28 +765,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &551921008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551921005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06ac45e937ace844494cf5e6b2bd017d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2147465351}
-  smooth: 0.3
-  distance: 7
-  height: 2.5
-  Angle: 4
-  cameraSwitchView: []
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 0
-  Switch: 0
 --- !u!1001 &608720289
 PrefabInstance:
   m_ObjectHideFlags: 0
