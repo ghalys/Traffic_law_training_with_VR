@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 166365445}
   - component: {fileID: 166365444}
   - component: {fileID: 166365443}
-  - component: {fileID: 166365446}
   - component: {fileID: 166365448}
   m_Layer: 0
   m_Name: Main Camera
@@ -375,21 +374,6 @@ Transform:
   m_Father: {fileID: 1656106349}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &166365446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166365442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db4e0fa240accd747a6f2abc9d4cf4f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cars:
-  - {fileID: 2147465351}
-  MyCamera: {fileID: 166365445}
 --- !u!114 &166365448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6482,6 +6466,10 @@ PrefabInstance:
     - target: {fileID: 466760, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 466760, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7582461300812181673, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: carSetting.cameraSwitchView.Array.size

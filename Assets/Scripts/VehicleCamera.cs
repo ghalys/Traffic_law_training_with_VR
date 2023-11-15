@@ -137,6 +137,7 @@ public class VehicleCamera : MonoBehaviour
         myRigidbody = target.GetComponent<Rigidbody>();
 
         cameraSwitchView = carScript.carSetting.cameraSwitchView;
+        Switch = 1;
 
     }
 
@@ -182,28 +183,28 @@ public class VehicleCamera : MonoBehaviour
 
 
 
-        if (Switch == 0)
-        {
-            // Damp angle from current y-angle towards target y-angle
+        // if (Switch == 0)
+        // {
+        //     // Damp angle from current y-angle towards target y-angle
 
-            float xAngle = Mathf.SmoothDampAngle(transform.eulerAngles.x,
-           target.eulerAngles.x + Angle, ref xVelocity, smooth);
+        //     float xAngle = Mathf.SmoothDampAngle(transform.eulerAngles.x,
+        //    target.eulerAngles.x + Angle, ref xVelocity, smooth);
 
-            float yAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y,
-            target.eulerAngles.y, ref yVelocity, smooth);
+        //     float yAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y,
+        //     target.eulerAngles.y, ref yVelocity, smooth);
 
-            // Look at the target
-            transform.eulerAngles = new Vector3(xAngle, yAngle,0.0f);
+        //     // Look at the target
+        //     transform.eulerAngles = new Vector3(xAngle, yAngle,0.0f);
 
-            var direction = transform.rotation * -Vector3.forward;
-            var targetDistance = AdjustLineOfSight(target.position + new Vector3(0, height, 0), direction);
-
-
-            transform.position = target.position + new Vector3(0, height, 0) + direction * targetDistance;
+        //     var direction = transform.rotation * -Vector3.forward;
+        //     var targetDistance = AdjustLineOfSight(target.position + new Vector3(0, height, 0), direction);
 
 
-        }
-        else
+        //     transform.position = target.position + new Vector3(0, height, 0) + direction * targetDistance;
+
+
+        // }
+        // else
         {
 
             transform.position = cameraSwitchView[Switch - 1].position;
