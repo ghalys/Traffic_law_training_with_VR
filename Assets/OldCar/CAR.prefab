@@ -13225,7 +13225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8228682738730802986}
   m_LocalRotation: {x: 0.00044566247, y: -0.9948234, z: 0.10152416, w: 0.0043669944}
-  m_LocalPosition: {x: -0.579132, y: -1.1632664, z: -3.3757477}
+  m_LocalPosition: {x: -0.579132, y: -1.19, z: -3.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13298,6 +13298,6 @@ MonoBehaviour:
   m_Device: 0
   m_PoseSource: 2
   m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 1
+  m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0

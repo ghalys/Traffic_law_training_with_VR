@@ -23,8 +23,8 @@ public class VehicleCamera : MonoBehaviour
 
     public Camera myxrcamera;
 
-    private float yVelocity = 0.0f;
-    private float xVelocity = 0.0f;
+    // private float yVelocity = 0.0f;
+    // private float xVelocity = 0.0f;
     [HideInInspector]
     public int Switch;
 
