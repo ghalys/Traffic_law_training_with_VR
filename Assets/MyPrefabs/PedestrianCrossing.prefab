@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &952124671483266062
 Transform:
@@ -50,7 +50,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5636924304113653443
 Transform:
@@ -76,9 +76,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 952124671483266062}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4665886090133042, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_RootOrder
@@ -138,9 +146,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 952124671483266062}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4665886090133042, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_RootOrder
@@ -200,9 +216,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 952124671483266062}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4665886090133042, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_RootOrder
@@ -386,9 +410,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 952124671483266062}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4665886090133042, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_RootOrder
