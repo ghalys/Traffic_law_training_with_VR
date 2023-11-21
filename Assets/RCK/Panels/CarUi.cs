@@ -27,6 +27,7 @@ public class CarUi : MonoBehaviour
 
         public TMP_Text speedText;
         public TMP_Text GearText;
+        // public GameObject tachometerNeedle;
 
     }
     public CarUIClass CarUI;
@@ -90,7 +91,7 @@ public class CarUi : MonoBehaviour
         thisAngle = (carScript.motorRPM / 20) - 175;
         thisAngle = Mathf.Clamp(thisAngle, -180, 90);
 
-        // CarUI.tachometerNeedle.rectTransform.rotation = Quaternion.Euler(0, 0, -thisAngle);
+        // CarUI.tachometerNeedle.transform.rotation = Quaternion.Euler(0, 0, thisAngle);
 
     }
 
