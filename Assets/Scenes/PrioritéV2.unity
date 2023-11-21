@@ -12479,6 +12479,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49848288
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2172484
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.3767128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.99971175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0053969105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.023393689
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759335663393370, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00012614595
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759336006609642, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759336006609642, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759336006609642, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759336006609642, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124759336006609642, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7211137655283866869, guid: 4e6b63a256f108649bfd3a58bc6f7ba8, type: 3}
       propertyPath: m_RootOrder
       value: 2
