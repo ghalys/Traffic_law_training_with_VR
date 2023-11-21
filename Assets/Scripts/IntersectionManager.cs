@@ -9,7 +9,7 @@ public class IntersectionManager : MonoBehaviour
     void Start()
     {
     }
-    void update()
+    void Update()
     {
        for (int i = 0; i < roads.Count-1; i++)
         {
