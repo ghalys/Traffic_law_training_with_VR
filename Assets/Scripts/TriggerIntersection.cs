@@ -11,10 +11,14 @@ public class TriggerIntersection : MonoBehaviour
     [SerializeField] UnityEvent onTriggerExit;
     public Boolean is_occupied;
     public Boolean can_move;
+    public Boolean will_move_right;
+    public Boolean will_move_left;
 
     public void Start(){
         is_occupied = false;
         can_move = true;
+        will_move_right = false;
+        will_move_left = false;
     }
     
     public void OnTriggerEnter(Collider obj)
