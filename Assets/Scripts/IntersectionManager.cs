@@ -16,5 +16,10 @@ public class IntersectionManager : MonoBehaviour
             roads[i].can_move = !roads[i+1].is_occupied;
 
         }
+        // for (int i = 0; i < roads.Count-1; i++)
+        // {
+        //     roads[i].can_move = !roads[i+1].is_occupied;
+
+        // }
 }
 }
