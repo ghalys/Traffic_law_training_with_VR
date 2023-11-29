@@ -33,7 +33,6 @@ public class npsController : MonoBehaviour
         if (Vector3.Distance(transform.position,PathPoints[index].position) < minimum_distance){
             if (index + 1 != PathPoints.Length){
 
-            
             index +=1;
             }
             else{

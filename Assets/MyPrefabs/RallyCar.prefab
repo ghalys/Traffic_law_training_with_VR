@@ -11443,7 +11443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400324}
   - component: {fileID: 5490658}
-  - component: {fileID: 7582461300812181673}
+  - component: {fileID: 8708042109598420231}
   m_Layer: 1
   m_Name: RallyCar
   m_TagString: Untagged
@@ -11489,7 +11489,7 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7582461300812181673
+--- !u!114 &8708042109598420231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11498,11 +11498,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 186536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e935d91a386dcc646bf50d6a492ded8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6874d68b6c2ecf7409ac84914707935b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controlMode: 1
-  activeControl: 1
+  activeControl: 0
   carWheels:
     wheels:
       frontWheelDrive: 1
@@ -11512,53 +11512,37 @@ MonoBehaviour:
       backRight: {fileID: 427762}
       backLeft: {fileID: 423712}
     setting:
-      Radius: 0.45
+      Radius: 0.4
       Weight: 1000
       Distance: 0.2
   carLights:
-    brakeLights:
-    - {fileID: 10849988}
-    - {fileID: 10857130}
-    reverseLights:
-    - {fileID: 10830420}
-    - {fileID: 10831322}
+    brakeLights: []
+    reverseLights: []
   carSounds:
     IdleEngine: {fileID: 8260538}
     LowEngine: {fileID: 8242402}
     HighEngine: {fileID: 8242402}
     switchGear: {fileID: 8261096}
   carParticles:
-    brakeParticlePerfab: {fileID: 100000, guid: 56113337b83693d4cae19b801546e4e0, type: 3}
-    shiftParticle1: {fileID: 19827420}
-    shiftParticle2: {fileID: 19886822}
+    brakeParticlePerfab: {fileID: 141004}
+    shiftParticle1: {fileID: 19886822}
+    shiftParticle2: {fileID: 19827420}
   carSetting:
     showNormalGizmos: 0
     carSteer: {fileID: 484796}
-    hitGround:
-    - tag: Street
-      grounded: 0
-      brakeSound: {fileID: 8300000, guid: 334cc9dcd313b2f48bda705e3eefc2df, type: 3}
-      groundSound: {fileID: 0}
-      brakeColor: {r: 0.5762371, g: 0.87933546, b: 0.9339623, a: 0}
-    - tag: Grass
-      grounded: 0
-      brakeSound: {fileID: 8300000, guid: 48557c3f3613c2e4babd9ef286d0b659, type: 3}
-      groundSound: {fileID: 8300000, guid: e74738166dc243747b9979b0cd3b6875, type: 3}
-      brakeColor: {r: 0.81929153, g: 0.8490566, b: 0.38768244, a: 0}
-    cameraSwitchView:
-    - {fileID: 0}
-    - {fileID: 466760}
+    hitGround: []
+    cameraSwitchView: []
     springs: 25000
     dampers: 1500
     carPower: 120
     shiftPower: 150
     brakePower: 8000
-    shiftCentre: {x: 0, y: -0.05, z: 0}
-    maxSteerAngle: 30
-    shiftDownRPM: 2000
-    shiftUpRPM: 4000
-    idleRPM: 700
-    stiffness: 3
+    shiftCentre: {x: 0, y: -0.8, z: 0}
+    maxSteerAngle: 25
+    shiftDownRPM: 1500
+    shiftUpRPM: 2500
+    idleRPM: 500
+    stiffness: 2
     automaticGear: 1
     gears:
     - -10
