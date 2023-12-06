@@ -1,10 +1,11 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+public class PedestrianControl : MonoBehaviour
 
-public class NpsController : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Animator animator;
@@ -61,8 +62,6 @@ public class NpsController : MonoBehaviour
             iswalking =false;
             agent.enabled = false;
             rb.isKinematic = false;
-
-
 
            
              // Calculez la direction dans laquelle déplacer l'objet (dans cet exemple, vers l'avant de la voiture)
