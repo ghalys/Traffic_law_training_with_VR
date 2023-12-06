@@ -17,6 +17,7 @@ TagManager:
   - LeftWheel
   - RightWheel
   - VehiclePoint
+  - End
   layers:
   - Default
   - TransparentFX
