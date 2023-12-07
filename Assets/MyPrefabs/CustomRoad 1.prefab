@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 467894449067138687}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: Street
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 2000674241751486963}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: Street
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 5779604636108021943}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Street
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8

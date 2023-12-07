@@ -12,7 +12,7 @@ public class VehicleControl1 : MonoBehaviour
     public bool activeControl = false;
 
     private float steer_value = 0f; 
-    private float accel_value = 0.2f;
+    private float accel_value = 0.1f;
     // Wheels Setting /////////////////////////////////
 
     public CarWheels carWheels;
@@ -119,6 +119,7 @@ public class VehicleControl1 : MonoBehaviour
 
         public float LimitBackwardSpeed = 20.0f;
         public float LimitForwardSpeed = 220.0f;
+        public float maxSpeed = 30.0f;
 
     }
 
@@ -462,8 +463,7 @@ public class VehicleControl1 : MonoBehaviour
 
         // speed of car
         speed = myRigidbody.velocity.magnitude * 2.7f;
-
-
+        // Debug.Log(speed);
 
         if (speed < lastSpeed - 10 && slip < 10)
         {
@@ -500,7 +500,13 @@ public class VehicleControl1 : MonoBehaviour
                 {
                     //steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
                     steer = steer_value;
-                    accel = accel_value;
+                    if(speed>=carSetting.maxSpeed){
+                        accel=0;
+                    }
+                    else{
+                        accel = accel_value;
+
+                    }
                     //shift = Input.GetKey(KeyCode.LeftShift) | Input.GetKey(KeyCode.RightShift);
 
 
