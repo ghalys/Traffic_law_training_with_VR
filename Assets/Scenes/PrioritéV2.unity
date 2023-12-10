@@ -1183,7 +1183,7 @@ MonoBehaviour:
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1876526821}
+      - m_Target: {fileID: 1578011570}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1822,6 +1822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CARpos
       objectReference: {fileID: 0}
+    - target: {fileID: 4452020311219701, guid: 495897ecedffed843b8dc6664ca31fe1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7213863265174650409, guid: 495897ecedffed843b8dc6664ca31fe1, type: 3}
     - {fileID: 4452020316318451, guid: 495897ecedffed843b8dc6664ca31fe1, type: 3}
@@ -1944,11 +1948,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871919728}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1876526821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4452020311219701, guid: 495897ecedffed843b8dc6664ca31fe1, type: 3}
-  m_PrefabInstance: {fileID: 915388831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967022397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,7 +2288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3277334950601692782, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70.99
+      value: -78.5
       objectReference: {fileID: 0}
     - target: {fileID: 3277334950601692782, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2297,7 +2296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3277334950601692782, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.4
+      value: -15.8
       objectReference: {fileID: 0}
     - target: {fileID: 3277334950601692782, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: m_LocalRotation.w
