@@ -31,6 +31,8 @@ public class PauseManager : MonoBehaviour
 
     public GameObject wheel4 ;
 
+    public GameObject Origin ;
+    public GameObject Rig ;
 
 
     //public PostProcessVolume postProcessVolume; // Assurez-vous que ce composant est attaché à votre caméra
@@ -72,6 +74,9 @@ public class PauseManager : MonoBehaviour
             body.SetActive(true) ;
             components.SetActive(true) ;
             Board.SetActive(true) ;
+            Origin.SetActive(false) ;
+            Rig.SetActive(true) ;
+
             
         }
         else 
@@ -89,6 +94,8 @@ public class PauseManager : MonoBehaviour
             body.SetActive(false) ;
             components.SetActive(false) ;
             Board.SetActive(false) ;
+            Origin.SetActive(true) ;
+            Rig.SetActive(false) ;
         }
 
         // Activer/désactiver l'effet de flou
