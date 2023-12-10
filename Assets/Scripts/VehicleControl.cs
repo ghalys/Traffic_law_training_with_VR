@@ -12,6 +12,7 @@ public class VehicleControl : MonoBehaviour
 
     public ControlMode controlMode = ControlMode.simple;
     public ControllerManager managerleft;
+    public bool fleche = false;
 
     public bool activeControl = false;
 
@@ -503,9 +504,13 @@ public class VehicleControl : MonoBehaviour
                 {
                     steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
                     // steer = -0.5f;
-                    accel = managerleft.get_value()/10;
+                    if(fleche){
+                        accel = Input.GetAxis("Vertical");
+                    }
+                    else{
+                        accel = managerleft.get_value()/10;
+                    }
                     // brake = Input.GetButton("Jump");
-                    // accel = Input.GetAxis("Vertical");
                     shift = Input.GetKey(KeyCode.LeftShift) | Input.GetKey(KeyCode.RightShift);
 
 
