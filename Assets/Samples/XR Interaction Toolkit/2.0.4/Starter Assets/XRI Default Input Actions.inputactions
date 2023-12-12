@@ -97,6 +97,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Signal_Gauche",
+                    "type": "Button",
+                    "id": "1382f513-85dc-4aaa-b6c9-55c88f4f9cbe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -218,6 +227,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Accel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "01e7f88e-82a0-42d0-bf2e-7a59d17e638a",
+                    "path": "<XRController>{LeftHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Signal_Gauche",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -635,6 +655,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Signal_droit",
+                    "type": "Button",
+                    "id": "964229a1-0be2-4548-9a12-4cbc2afe4799",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -756,6 +785,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Decel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea7fdf0e-fd02-49f0-b6ab-ca459c26d95a",
+                    "path": "<XRController>{LeftHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Signal_droit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

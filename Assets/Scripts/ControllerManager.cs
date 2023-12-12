@@ -9,6 +9,11 @@ public class ControllerManager : MonoBehaviour
 {
     public InputActionReference accel;
     public InputActionReference decel;
+    public InputActionReference TriggerClignotantDroit;
+    public InputActionReference TriggerClignotantGauche;
+    public Clignotant ClignotantDroit;
+    public Clignotant ClignotantGauche;
+
     private float value=0;
 
     // Start is called before the first frame update
@@ -18,9 +23,18 @@ public class ControllerManager : MonoBehaviour
             accel.action.canceled += ctx => TriggerLeftCanceled(ctx);
             decel.action.performed += ctx => TriggerRightPerformed(ctx);
             decel.action.canceled += ctx => TriggerRightPerformed(ctx);
+
+            TriggerClignotantDroit.action.performed += ctx => ActiverClignotantDroit(ctx);
+            TriggerClignotantGauche.action.performed += ctx => ActiverClignotantGauche(ctx);
+
     }
 
-
+    void ActiverClignotantDroit(InputAction.CallbackContext context){
+        ClignotantDroit.clignotantActive = context.ReadValueAsButton();
+    }
+    void ActiverClignotantGauche(InputAction.CallbackContext context){
+        ClignotantGauche.clignotantActive = context.ReadValueAsButton();
+    }
     void TriggerLeftPerformed(InputAction.CallbackContext context)
     {
         // Get the value of the trigger press
