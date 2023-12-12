@@ -825,7 +825,7 @@ SphereCollider:
   m_GameObject: {fileID: 687615985}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1949,7 +1949,7 @@ SphereCollider:
   m_GameObject: {fileID: 1558372627}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2203,7 +2203,7 @@ SphereCollider:
   m_GameObject: {fileID: 1871919728}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2432,7 +2432,7 @@ SphereCollider:
   m_GameObject: {fileID: 2003503664}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2662,6 +2662,14 @@ PrefabInstance:
     - target: {fileID: 3801495799280075292, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929001739385873697, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
+      propertyPath: dureeClignotement
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929001739385873697, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
+      propertyPath: intensiteLuminosite
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5112578520440665410, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: fleche

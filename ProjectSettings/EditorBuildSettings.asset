@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Priorit\xE9V2.unity"
     guid: 57265388283184046a853894d1c3fbe8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Rond Point.unity
     guid: c01918013bdb2ca47839d96d8aa378da
   m_configObjects:

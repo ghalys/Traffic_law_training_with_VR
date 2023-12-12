@@ -21,7 +21,6 @@ public class VitesseAffichage : MonoBehaviour
     {
         speed = target.speed;
         maxSpeed = target.carSetting.LimitForwardSpeed;
-        Debug.Log(speed);
         if (arrow != null)
             arrow.localEulerAngles =
                 new Vector3(0, 0, Mathf.Lerp(maxSpeedArrowAngle,minSpeedArrowAngle, speed / maxSpeed));
