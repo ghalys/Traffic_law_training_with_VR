@@ -464,7 +464,6 @@ public class VehicleControl : MonoBehaviour
     {
 
 
-        // speed of car
         speed = myRigidbody.velocity.magnitude * 2.7f;
 
 
