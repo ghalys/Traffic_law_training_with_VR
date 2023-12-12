@@ -12161,9 +12161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452020310861993}
-  - component: {fileID: 4452020316318451}
   - component: {fileID: 7213863265174650408}
-  - component: {fileID: 7213863265174650409}
   m_Layer: 1
   m_Name: CARpos
   m_TagString: VehicleRobot
@@ -12193,22 +12191,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!54 &4452020316318451
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4452020311219701}
-  serializedVersion: 2
-  m_Mass: 2000
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 2
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &7213863265174650408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12222,96 +12204,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7213863265174650409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4452020311219701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639ad9bf12ac02c4785df26523a388d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlMode: 1
-  activeControl: 1
-  carWheels:
-    wheels:
-      frontWheelDrive: 1
-      frontRight: {fileID: 4452020310788877}
-      frontLeft: {fileID: 4452020310897705}
-      backWheelDrive: 1
-      backRight: {fileID: 4452020310849905}
-      backLeft: {fileID: 4452020310895909}
-    setting:
-      Radius: 0.45
-      Weight: 1000
-      Distance: 0.2
-  carLights:
-    brakeLights:
-    - {fileID: 4452020317254249}
-    - {fileID: 4452020317127109}
-    reverseLights:
-    - {fileID: 4452020317207495}
-    - {fileID: 4452020317127909}
-  carSounds:
-    IdleEngine: {fileID: 4452020313477893}
-    LowEngine: {fileID: 4452020313554433}
-    HighEngine: {fileID: 4452020313534799}
-    switchGear: {fileID: 4452020313465539}
-  carParticles:
-    brakeParticlePerfab: {fileID: 0}
-    shiftParticle1: {fileID: 4452020291472329}
-    shiftParticle2: {fileID: 4452020291494529}
-  carSetting:
-    showNormalGizmos: 0
-    carSteer: {fileID: 4452020310879673}
-    hitGround:
-    - tag: Street
-      grounded: 0
-      brakeSound: {fileID: 0}
-      groundSound: {fileID: 0}
-      brakeColor: {r: 0, g: 0.43028927, b: 1, a: 0}
-    - tag: Grass
-      grounded: 0
-      brakeSound: {fileID: 0}
-      groundSound: {fileID: 0}
-      brakeColor: {r: 0.9748901, g: 1, b: 0.04150939, a: 0}
-    cameraSwitchView: []
-    springs: 25000
-    dampers: 1500
-    carPower: 120
-    shiftPower: 150
-    brakePower: 8000
-    shiftCentre: {x: 0, y: -0.8, z: 0}
-    maxSteerAngle: 25
-    shiftDownRPM: 1500
-    shiftUpRPM: 2500
-    idleRPM: 500
-    stiffness: 2
-    automaticGear: 1
-    gears:
-    - -10
-    - 9
-    - 6
-    - 4.5
-    - 3
-    - 2.5
-    LimitBackwardSpeed: 20
-    LimitForwardSpeed: 220
-  brake: 0
-  curTorque: 100
-  powerShift: 100
-  shift: 0
-  speed: 0
-  currentGear: 0
-  NeutralGear: 1
-  motorRPM: 0
-  Backward: 0
-  accelFwd: 0
-  accelBack: 0
-  steerAmount: 0
 --- !u!1 &4452020311219919
 GameObject:
   m_ObjectHideFlags: 0

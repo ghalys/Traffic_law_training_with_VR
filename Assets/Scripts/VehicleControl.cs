@@ -9,9 +9,11 @@ public enum ControlMode { simple = 1, touch = 2 }
 public class VehicleControl : MonoBehaviour
 {
 
-
+    public bool PriorityRespect = true;
+    public bool PriorityCheck = false;
     public ControlMode controlMode = ControlMode.simple;
     public ControllerManager managerleft;
+    public bool fleche = false;
 
     public bool activeControl = false;
 
@@ -503,9 +505,17 @@ public class VehicleControl : MonoBehaviour
                 {
                     steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
                     // steer = -0.5f;
-                    accel = managerleft.get_value()/10;
                     // brake = Input.GetButton("Jump");
-                    // accel = Input.GetAxis("Vertical");
+                    if (fleche)
+                    {
+                     accel = Input.GetAxis("Vertical");
+
+                    }
+                    else
+                    {
+                    accel = managerleft.get_value()/10;
+
+                    }
                     shift = Input.GetKey(KeyCode.LeftShift) | Input.GetKey(KeyCode.RightShift);
 
 
@@ -1037,6 +1047,20 @@ public class VehicleControl : MonoBehaviour
 
         Gizmos.DrawCube(Vector3.up/1.5f, new Vector3(2.5f, 2.0f, 6));
         Gizmos.DrawSphere(carSetting.shiftCentre / transform.lossyScale.x, 0.2f);
+
+    }
+    public void Priority()
+    {
+        this.PriorityRespect = false;
+    }
+    public void PriorityFinalCheck()
+    {
+        if (this.PriorityRespect==true) { 
+            this.PriorityCheck = true;
+        } else
+        {
+            Debug.Log("Failed");
+                }
 
     }
 
