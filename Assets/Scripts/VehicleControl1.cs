@@ -10,7 +10,6 @@ public class VehicleControl1 : MonoBehaviour
     public ControlMode controlMode = ControlMode.simple;
 
     public bool activeControl = false;
-
     private float steer_value = 0f; 
     private float accel_value = 0.1f;
     // Wheels Setting /////////////////////////////////
