@@ -30,10 +30,10 @@ public class ControllerManager : MonoBehaviour
     }
 
     void ActiverClignotantDroit(InputAction.CallbackContext context){
-        ClignotantDroit.clignotantActive = context.ReadValueAsButton();
+        ClignotantDroit.clignotantActive = context.action.triggered;
     }
     void ActiverClignotantGauche(InputAction.CallbackContext context){
-        ClignotantGauche.clignotantActive = context.ReadValueAsButton();
+        ClignotantGauche.clignotantActive = context.action.triggered;
     }
     void TriggerLeftPerformed(InputAction.CallbackContext context)
     {
