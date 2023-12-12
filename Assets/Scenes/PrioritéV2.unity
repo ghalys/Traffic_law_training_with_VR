@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8952848030260049001, guid: 94106d0f7b8e6584daa6110c1c9b406b, type: 3}
       propertyPath: m_Name
-      value: CARpos (1)
+      value: CARpos
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94106d0f7b8e6584daa6110c1c9b406b, type: 3}
@@ -1851,7 +1851,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2237782305369496633, guid: 9e725abced0e460429f43c20198b3f9d, type: 3}
       propertyPath: m_Name
-      value: PathCar (1)
+      value: PathCar
       objectReference: {fileID: 0}
     - target: {fileID: 2237782305369496638, guid: 9e725abced0e460429f43c20198b3f9d, type: 3}
       propertyPath: m_RootOrder
@@ -2348,7 +2348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5377912991336875932, guid: 42e06a5f6ca965649ba8b5a7eaa9b3e7, type: 3}
       propertyPath: m_Name
-      value: Apparition (1)
+      value: Apparition
       objectReference: {fileID: 0}
     - target: {fileID: 5377912991336875935, guid: 42e06a5f6ca965649ba8b5a7eaa9b3e7, type: 3}
       propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
