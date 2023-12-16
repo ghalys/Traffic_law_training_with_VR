@@ -791,7 +791,7 @@
                 {
                     "name": "",
                     "id": "ea7fdf0e-fd02-49f0-b6ab-ca459c26d95a",
-                    "path": "<XRController>{LeftHand}/gripButton",
+                    "path": "<XRController>{RightHand}/gripButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -29,7 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6760543557422853531}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4919065565564580875
 GameObject:
@@ -1100,7 +1100,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6760543557422853531}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 11.654, y: -179.497, z: 0}
 --- !u!20 &6760543557033110162
 Camera:
@@ -1337,8 +1337,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7756435025047544584}
   - {fileID: 6760543557033110191}
+  - {fileID: 7756435025047544584}
   - {fileID: 1782506360951794214}
   - {fileID: 6738395056621967655}
   - {fileID: 4919065565564580876}
@@ -1392,6 +1392,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accel: {fileID: 2405100670058891549, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   decel: {fileID: -5943624779159436952, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  TriggerClignotantDroit: {fileID: 0}
+  TriggerClignotantGauche: {fileID: 0}
+  ClignotantDroit: {fileID: 0}
+  ClignotantGauche: {fileID: 0}
 --- !u!1 &8581813623730159693
 GameObject:
   m_ObjectHideFlags: 0

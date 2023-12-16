@@ -18,17 +18,8 @@ public class Failed : MonoBehaviour
     public List<GameObject> listeDeGameObjects;
 
     
-    public GameObject body ;
 
-    public GameObject components ;
-    public GameObject Board ;
-
-    public GameObject wheel1 ;
-    public GameObject wheel2 ;
-
-    public GameObject wheel3 ;
-
-    public GameObject wheel4 ;
+    public GameObject Carcomponents ;
     
     // Start is called before the first frame update
     void Start()
@@ -38,13 +29,8 @@ public class Failed : MonoBehaviour
       Time.timeScale = 0;
       FailedM.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
       FailedM.transform.LookAt(new Vector3(2 * FailedM.transform.position.x - player.position.x, FailedM.transform.position.y, 2 * FailedM.transform.position.z - player.position.z));
-      wheel1.SetActive(false) ;
-      wheel2.SetActive(false) ;
-      wheel3.SetActive(false) ;
-      wheel4.SetActive(false) ;
-      body.SetActive(false) ;
-      components.SetActive(false) ;
-      Board.SetActive(false) ;      
+      
+      Carcomponents.SetActive(false) ;
     }
 
     // Update is called once per frame

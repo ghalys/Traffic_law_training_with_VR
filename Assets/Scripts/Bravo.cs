@@ -8,7 +8,6 @@ public class Bravo : MonoBehaviour
 
     public GameObject Bravoo ; 
     public GameObject Situations ;
-    public GameObject Menu ;
     
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class Bravo : MonoBehaviour
     }
     public void Quitter(){
         Bravoo.SetActive(false) ;
-        Menu.SetActive(true) ;  
 
     }
     public void ChoisirAutreSituation(){

@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Situations : MonoBehaviour
 {
-    public GameObject Menu ;
     public GameObject Situationss ; 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,6 @@ public class Situations : MonoBehaviour
     }
     public void GoMenu(){
         Situationss.SetActive(false) ;
-        Menu.SetActive(true) ;
     }
 
     public void Situation1(){

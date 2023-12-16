@@ -10,17 +10,8 @@ public class Pause : MonoBehaviour
     public GameObject Sure;
     public bool ispaused ;
 
-     public GameObject body ;
 
-    public GameObject components ;
-    public GameObject Board ;
-
-    public GameObject wheel1 ;
-    public GameObject wheel2 ;
-
-    public GameObject wheel3 ;
-
-    public GameObject wheel4 ;
+    public GameObject Carcomponents ;
 
     public GameObject RightHandJeu ;
     public GameObject RightHandPause ;
@@ -58,19 +49,12 @@ public class Pause : MonoBehaviour
         PauseObjet.SetActive(false);
         ispaused = false;
         Time.timeScale = 1;
-        wheel1.SetActive(true) ;
-        wheel2.SetActive(true) ;
-        wheel3.SetActive(true) ;
-        wheel4.SetActive(true) ;
-        body.SetActive(true) ;
-        components.SetActive(true) ;
-        Board.SetActive(true) ;
+        Carcomponents.SetActive(true) ;
         RightHandPause.SetActive(false) ;
         LeftHandPause.SetActive(false) ;
         RightHandJeu.SetActive(true) ;
         LeftHandJeu.SetActive(true) ;
         GameObjectJeu.SetActive(true) ;
-        //ajouter une script pour passer à la scene du jeu 
     }
 
     public void Quitter()

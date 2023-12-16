@@ -3,8 +3,8 @@ using UnityEngine;
 public class Clignotant : MonoBehaviour
 {
     public float dureeClignotement = 1f; // Durée d'un cycle de clignotement en secondes
-    public bool clignotantActive = false;
-    private bool clignotantActif = false;
+    private bool clignotantlumineux = false;
+    public bool clignotantActif = false;
     private float tempsProchainClignotement;
     private Renderer rend;
 
@@ -13,24 +13,29 @@ public class Clignotant : MonoBehaviour
         tempsProchainClignotement = Time.time + dureeClignotement;
 
         rend = GetComponent<Renderer>();
+        rend.enabled = clignotantActif;
     }
 
     void Update()
     {
-        if(clignotantActive){
+        if(clignotantActif){
 
         // Vérifier si le temps du prochain clignotement est atteint
         if (Time.time >= tempsProchainClignotement)
         {
             // Inverser l'état du clignotant
-            clignotantActif = !clignotantActif;
+            clignotantlumineux = !clignotantlumineux;
 
             // Activer ou désactiver le composant Renderer
-            rend.enabled = clignotantActif;
+            rend.enabled = clignotantlumineux;
 
             // Mettre à jour le temps du prochain clignotement
             tempsProchainClignotement = Time.time + dureeClignotement;
         }
+        }
+        else{
+            rend.enabled = clignotantActif;
+
         }
     }
 }

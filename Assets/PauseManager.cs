@@ -21,17 +21,8 @@ public class PauseManager : MonoBehaviour
     public List<GameObject> listeDeGameObjects;
 
     
-    public GameObject body ;
 
-    public GameObject components ;
-    public GameObject Board ;
-
-    public GameObject wheel1 ;
-    public GameObject wheel2 ;
-
-    public GameObject wheel3 ;
-
-    public GameObject wheel4 ;
+    public GameObject Carcomponents ;
 
     public GameObject RightHandJeu ;
     public GameObject RightHandPause ;
@@ -71,13 +62,7 @@ public class PauseManager : MonoBehaviour
             
             ispaused = false;
             Time.timeScale = 1;
-            wheel1.SetActive(true) ;
-            wheel2.SetActive(true) ;
-            wheel3.SetActive(true) ;
-            wheel4.SetActive(true) ;
-            body.SetActive(true) ;
-            components.SetActive(true) ;
-            Board.SetActive(true) ;
+            Carcomponents.SetActive(true) ;
             RightHandPause.SetActive(false) ;
             LeftHandPause.SetActive(false) ;
             RightHandJeu.SetActive(true) ;
@@ -98,13 +83,7 @@ public class PauseManager : MonoBehaviour
             ParameterPanel.transform.LookAt(new Vector3(2 * ParameterPanel.transform.position.x - player.position.x, ParameterPanel.transform.position.y, 2 * ParameterPanel.transform.position.z - player.position.z));     
             SurePanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
             SurePanel.transform.LookAt(new Vector3(2 * SurePanel.transform.position.x - player.position.x, SurePanel.transform.position.y, 2 * SurePanel.transform.position.z - player.position.z));                   
-            wheel1.SetActive(false) ;
-            wheel2.SetActive(false) ;
-            wheel3.SetActive(false) ;
-            wheel4.SetActive(false) ;
-            body.SetActive(false) ;
-            components.SetActive(false) ;
-            Board.SetActive(false) ;
+            Carcomponents.SetActive(false) ;
             RightHandPause.SetActive(true) ;
             LeftHandPause.SetActive(true) ;
             RightHandJeu.SetActive(false) ;
