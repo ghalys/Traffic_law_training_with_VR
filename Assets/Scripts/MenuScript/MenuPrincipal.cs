@@ -15,11 +15,7 @@ public class MenuPrincipal : MonoBehaviour
         Menu.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void Play()
     { 
        // SceneManager.LoadScene(sceneName);
@@ -35,6 +31,14 @@ public class MenuPrincipal : MonoBehaviour
     {
         Menu.SetActive(false) ;
         Situations.SetActive(true) ;
+        GameManager.modeLibre = false;
+    }
+     public void GoModeLibre()
+    {
+        Menu.SetActive(false) ;
+        GameManager.modeLibre = true;
+        GameManager.index_situation = 0;
+        GameManager.scene_suivante();
     }
 
     public void Quitter()

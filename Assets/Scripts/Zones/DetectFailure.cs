@@ -8,7 +8,6 @@ public class DetectFailure : MonoBehaviour
     public bool PriorityRespect = true;
     public bool PriorityCheck = false;
     public FailMenu fail_menu;
-    public String msg = "";
 
 
     void OnCollisionEnter(Collision collision)
@@ -26,6 +25,10 @@ public class DetectFailure : MonoBehaviour
     {
         this.PriorityRespect = false;
     }
+    public void Exited(){
+            fail_menu.gameObject.SetActive(true);
+            fail_menu.SetMessageExitedRoad();
+        }
     public void PriorityFinalCheck()
     {
         if (this.PriorityRespect==true) { 

@@ -8,7 +8,7 @@ public class MovingCar : MonoBehaviour
 
     private List<GameObject> waypoints;
     public float speed = 10;
-    public float mindist = 2;
+    public float min_dist = 2;
     private int index = 0;
     public bool can_move = false;
 
@@ -44,7 +44,7 @@ public class MovingCar : MonoBehaviour
         Vector3 newPos = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
         transform.position = newPos;
         float distance = Vector3.Distance(transform.position, destination);
-        if (distance <= mindist)
+        if (distance <= min_dist)
         {
             if (index < waypoints.Count - 1)
             {

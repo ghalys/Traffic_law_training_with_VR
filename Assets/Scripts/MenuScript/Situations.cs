@@ -4,20 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Situations : MonoBehaviour
 {
-    public GameObject Situationss ; 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject situations ; 
+    public GameObject Menu;
+ 
     public void GoMenu(){
-        Situationss.SetActive(false) ;
+        situations.SetActive(false) ;
+        Menu.SetActive(true);
+
     }
 
     public void Situation1(){

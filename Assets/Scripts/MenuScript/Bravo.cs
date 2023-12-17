@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,18 +29,20 @@ public class Bravo : MonoBehaviour
 
     }
     
-    public void Recommencer()
-    {
-        SceneManager.LoadScene("PrioritéV2"); 
-    }
 
 
     public void Quitter(){
         SceneManager.LoadScene("debut"); 
     }
 
-    public void Menu_principal(){
-        SceneManager.LoadScene("debut");
+    public void SituationSuivante(){
+        if (GameManager.modeLibre){
+
+            GameManager.scene_suivante();
+        }
+        else{
+            SceneManager.LoadScene("debut");
+        }
 
     }
 }

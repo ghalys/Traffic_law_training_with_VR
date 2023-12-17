@@ -34,6 +34,9 @@ public class FailMenu : MonoBehaviour
     public void SetMessageCollision(String name){
       txt.text = "Attention, vous avez touché "+ name;
     }
+    public void SetMessageExitedRoad(){
+      txt.text = "Attention, vous êtes sorti des limites du jeu. Veuillez relire la consigne du début";
+    }
     public void SetMessagePriorite_ADroite(){
       txt.text = "Vous n'avez pas respecté la règle de la priorité à droite";
     }
