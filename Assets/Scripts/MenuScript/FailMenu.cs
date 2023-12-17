@@ -15,28 +15,24 @@ public class FailMenu : MonoBehaviour
     public float spawnDistance = 2 ;
     public float hauteur = 2 ;
 
-    public bool ispaused=true ;
     public TextMeshProUGUI txt;
+    public PauseManager pauseManager;
 
     
-
-    [Header("Objects to Hide")]
-    public GameObject Carcomponents ;
-    
-    // Start is called before the first frame update
     void Start()
     {
       FailedM.SetActive(true) ;  
-      ispaused = true;
-      Time.timeScale = 0;
       FailedM.transform.LookAt(player.transform.position);
       FailedM.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
       FailedM.transform.Rotate(0, 180, 0);
-      Carcomponents.SetActive(false) ;
+      pauseManager.ModeMenu(true);
     }
 
     public void SetMessageCollisionRobot(){
       txt.text = "Accident, Game over";
+    } 
+    public void SetMessageCollision(String name){
+      txt.text = "Attention, vous avez touché "+ name;
     }
     public void SetMessagePriorite_ADroite(){
       txt.text = "Vous n'avez pas respecté la règle de la priorité à droite";

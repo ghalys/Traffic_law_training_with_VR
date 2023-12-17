@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class apparition : MonoBehaviour
+public class Apparition : MonoBehaviour
 {
     
     [SerializeField] string tagFilter;
@@ -13,7 +13,6 @@ public class apparition : MonoBehaviour
     {
         if(!obj.gameObject.CompareTag(tagFilter)) return;
         onTriggerEnter.Invoke();
-        Debug.Log("##################test");
     }
     public void OnTriggerExit(Collider obj)
     {

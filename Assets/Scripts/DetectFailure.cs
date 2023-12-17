@@ -17,6 +17,10 @@ public class DetectFailure : MonoBehaviour
             fail_menu.gameObject.SetActive(true);
             fail_menu.SetMessageCollisionRobot();
         }
+        else if ( collision.gameObject.tag !="End"){
+            fail_menu.gameObject.SetActive(true);
+            fail_menu.SetMessageCollision(collision.gameObject.name);
+        }
     }
         public void Priority()
     {

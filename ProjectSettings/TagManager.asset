@@ -18,6 +18,7 @@ TagManager:
   - RightWheel
   - VehiclePoint
   - End
+  - VehicleRobot
   layers:
   - Default
   - TransparentFX
