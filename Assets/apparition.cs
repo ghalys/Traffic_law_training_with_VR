@@ -13,6 +13,7 @@ public class apparition : MonoBehaviour
     {
         if(!obj.gameObject.CompareTag(tagFilter)) return;
         onTriggerEnter.Invoke();
+        Debug.Log("##################test");
     }
     public void OnTriggerExit(Collider obj)
     {

@@ -1,17 +1,22 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
+
+public enum ControlMode { simple = 1, touch = 2 }
 
 
-
-public class VehicleControl1 : MonoBehaviour
+public class VehicleControl : MonoBehaviour
 {
 
-
+  
     public ControlMode controlMode = ControlMode.simple;
+    public ControllerManager managerleft;
+    public bool fleche = false;
 
     public bool activeControl = false;
-    private float steer_value = 0f; 
-    private float accel_value = 0.1f;
+
+
     // Wheels Setting /////////////////////////////////
 
     public CarWheels carWheels;
@@ -118,7 +123,6 @@ public class VehicleControl1 : MonoBehaviour
 
         public float LimitBackwardSpeed = 20.0f;
         public float LimitForwardSpeed = 220.0f;
-        public float maxSpeed = 30.0f;
 
     }
 
@@ -399,10 +403,10 @@ public class VehicleControl1 : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.transform.root.GetComponent<VehicleControl1>())
+        if (collision.transform.root.GetComponent<VehicleControl>())
         {
 
-            collision.transform.root.GetComponent<VehicleControl1>().slip2 = Mathf.Clamp(collision.relativeVelocity.magnitude, 0.0f, 10.0f);
+            collision.transform.root.GetComponent<VehicleControl>().slip2 = Mathf.Clamp(collision.relativeVelocity.magnitude, 0.0f, 10.0f);
 
             myRigidbody.angularVelocity = new Vector3(-myRigidbody.angularVelocity.x * 0.5f, myRigidbody.angularVelocity.y * 0.5f, -myRigidbody.angularVelocity.z * 0.5f);
             myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, myRigidbody.velocity.y * 0.5f, myRigidbody.velocity.z);
@@ -418,8 +422,8 @@ public class VehicleControl1 : MonoBehaviour
     void OnCollisionStay(Collision collision)
     {
 
-       if (collision.transform.root.GetComponent<VehicleControl1>())
-            collision.transform.root.GetComponent<VehicleControl1>().slip2 = 5.0f;
+       if (collision.transform.root.GetComponent<VehicleControl>())
+            collision.transform.root.GetComponent<VehicleControl>().slip2 = 5.0f;
 
     }
 
@@ -462,7 +466,8 @@ public class VehicleControl1 : MonoBehaviour
 
         // speed of car
         speed = myRigidbody.velocity.magnitude * 2.7f;
-        // Debug.Log(speed);
+
+
 
         if (speed < lastSpeed - 10 && slip < 10)
         {
@@ -497,16 +502,20 @@ public class VehicleControl1 : MonoBehaviour
 
                 if (carWheels.wheels.frontWheelDrive || carWheels.wheels.backWheelDrive)
                 {
-                    //steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
-                    steer = steer_value;
-                    if(speed>=carSetting.maxSpeed){
-                        accel=0;
-                    }
-                    else{
-                        accel = accel_value;
+                    steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
+                    // steer = -0.5f;
+                    // brake = Input.GetButton("Jump");
+                    if (fleche)
+                    {
+                     accel = Input.GetAxis("Vertical");
 
                     }
-                    //shift = Input.GetKey(KeyCode.LeftShift) | Input.GetKey(KeyCode.RightShift);
+                    else
+                    {
+                    accel = managerleft.get_value()/10;
+
+                    }
+                    shift = Input.GetKey(KeyCode.LeftShift) | Input.GetKey(KeyCode.RightShift);
 
 
                 }
@@ -1039,22 +1048,9 @@ public class VehicleControl1 : MonoBehaviour
         Gizmos.DrawSphere(carSetting.shiftCentre / transform.lossyScale.x, 0.2f);
 
     }
-    public void SteerChanger()
-    {
-        steer_value=-1.0f;
-    }
-    public void SteerQuitter()
-    {
-        steer_value=0.0f;
-    }
-    public void AccelChanger()
-    {
-        accel_value=0.0f;
-    }
-    public void AccelQuitter()
-    {
-        accel_value = 0.2f;
-    }
+
+
+
 
 
 }

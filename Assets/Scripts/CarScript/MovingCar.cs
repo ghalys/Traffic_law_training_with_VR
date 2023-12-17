@@ -10,7 +10,7 @@ public class MovingCar : MonoBehaviour
     public float speed = 10;
     public float mindist = 2;
     private int index = 0;
-    public bool can_move = true;
+    public bool can_move = false;
 
     void Start()
     {
@@ -24,9 +24,14 @@ public class MovingCar : MonoBehaviour
         }
 
     }
+    public void Can_move(){
+        can_move = !can_move;
+    }
     void Update()
-    {   if(can_move)
+    {  
+         if(can_move)
     {
+        
 
         MoveToWaypoint();
         RotateTowardsWaypoint();
@@ -37,10 +42,8 @@ public class MovingCar : MonoBehaviour
     {
         Vector3 destination = waypoints[index].transform.position;
         Vector3 newPos = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
-        // newPos.y = 0.09174822f;
         transform.position = newPos;
         float distance = Vector3.Distance(transform.position, destination);
-        // Debug.Log(distance);
         if (distance <= mindist)
         {
             if (index < waypoints.Count - 1)

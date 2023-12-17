@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Failed : MonoBehaviour
+public class FailMenu : MonoBehaviour
 {
 
     public GameObject FailedM ; 
@@ -11,14 +13,14 @@ public class Failed : MonoBehaviour
     public Transform player;
 
     public float spawnDistance = 2 ;
-
     public float hauteur = 2 ;
 
     public bool ispaused=true ;
-    public List<GameObject> listeDeGameObjects;
+    public TextMeshProUGUI txt;
 
     
 
+    [Header("Objects to Hide")]
     public GameObject Carcomponents ;
     
     // Start is called before the first frame update
@@ -33,11 +35,13 @@ public class Failed : MonoBehaviour
       Carcomponents.SetActive(false) ;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void SetMessageCollisionRobot(){
+      txt.text = "Accident, Game over";
     }
+    public void SetMessagePriorite_ADroite(){
+      txt.text = "Vous n'avez pas respecté la règle de la priorité à droite";
+    }
+    
     public void QuitterF(){
         SceneManager.LoadScene("debut"); 
 
