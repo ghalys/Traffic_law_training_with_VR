@@ -6,25 +6,39 @@ using UnityEngine.SceneManagement;
 public class Bravo : MonoBehaviour
 {
 
-    public GameObject Bravoo ; 
+    public GameObject BravoPanel ; 
     public GameObject Situations ;
+    public PauseManager pauseManager;
     
-    // Start is called before the first frame update
+
+
+    public Transform player;
+
+    public float spawnDistance = 2 ;
+    public float hauteur = 2 ; 
+    public bool change = false;
+
     void Start()
     {
-      Bravoo.SetActive(true) ;  
-    }
+        Time.timeScale = 0;
+        BravoPanel.transform.LookAt(player.transform.position);
+        BravoPanel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
+        BravoPanel.transform.Rotate(0, 180, 0);
+        pauseManager.ModeMenu(true);
 
-    // Update is called once per frame
-    void Update()
+    }
+    
+    public void Recommencer()
     {
-        
+        SceneManager.LoadScene("PrioritéV2"); 
     }
-    public void Quitter(){
-        Bravoo.SetActive(false) ;
 
+
+    public void Quitter(){
+        SceneManager.LoadScene("debut"); 
     }
-    public void ChoisirAutreSituation(){
+
+    public void Menu_principal(){
         SceneManager.LoadScene("debut");
 
     }

@@ -6,7 +6,8 @@ public class Debut : MonoBehaviour
 {
     public GameObject StartPannel ;
     public Transform player;
-
+    public GameObject carcomponent;
+    public PauseManager pause_manager;
     public float spawnDistance = 2 ;
 
     public float hauteur = 2 ;
@@ -14,17 +15,16 @@ public class Debut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        StartPannel.transform.LookAt(new Vector3(2 * StartPannel.transform.position.x - player.position.x, StartPannel.transform.position.y, 2 * StartPannel.transform.position.z - player.position.z)); 
-        // StartPannel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
-        StartPannel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
-        StartPannel.transform.Rotate(Vector3.up, -30.0f);        
+        Time.timeScale = 0;
+        carcomponent.SetActive(false);
+        StartPannel.transform.LookAt(player.transform.position);
+        StartPannel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
+        StartPannel.transform.Rotate(0, 180, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void commencer() {
+        StartPannel.SetActive(false) ;
+        pause_manager.ModeMenu(false);
     }
     
 }

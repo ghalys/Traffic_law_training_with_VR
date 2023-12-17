@@ -18,11 +18,6 @@ public class FinalLineDetection : MonoBehaviour
                 bravo.SetActive(true);
     
                 }
-        // Affichez le message dans la console (vous pouvez remplacer cela par un affichage dans l'interface utilisateur)
-
-
-        // Vous pouvez également afficher le message dans l'interface utilisateur ou déclencher d'autres actions ici
-        // Exemple : UIManager.Instance.DisplayMessage(message);
-    }
+        }
     }
 }
