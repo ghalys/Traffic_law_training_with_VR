@@ -1115,6 +1115,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202540492183439242, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 701557375}
+    - target: {fileID: 6202540492183439242, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
+      propertyPath: BravoPanel
+      value: 
+      objectReference: {fileID: 181173989}
+    - target: {fileID: 6202540492183439242, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
+      propertyPath: pauseManager
+      value: 
+      objectReference: {fileID: 1719534153}
+    - target: {fileID: 6202540492183439242, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
+      propertyPath: spawnDistance
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6202540492436599472, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
       propertyPath: body
       value: 
@@ -1822,6 +1838,10 @@ PrefabInstance:
       propertyPath: carcomponent
       value: 
       objectReference: {fileID: 1828841189}
+    - target: {fileID: 6288647103053339237, guid: 1066a02aed92e6943a3735d3f88397d6, type: 3}
+      propertyPath: pause_manager
+      value: 
+      objectReference: {fileID: 1719534153}
     - target: {fileID: 6288647103053339237, guid: 1066a02aed92e6943a3735d3f88397d6, type: 3}
       propertyPath: spawnDistance
       value: 8
@@ -2884,6 +2904,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719534153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4146082568095352096, guid: 8ee87507cd445e3419ab1f5a78b35338, type: 3}
+  m_PrefabInstance: {fileID: 1652673083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc4ca1cd0b10464099b39f017d759bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721214591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3277334950601468608, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
@@ -3677,7 +3708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112578520440665410, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: fleche
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112578520440665410, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: fail_menu
