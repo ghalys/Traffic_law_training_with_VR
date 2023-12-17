@@ -18,7 +18,6 @@ public class PauseManager : MonoBehaviour
     public float hauteur = 2 ;
 
     public bool ispaused=true ;
-    public List<GameObject> listeDeGameObjects;
 
     
 

@@ -25,7 +25,7 @@ public class MovingCar : MonoBehaviour
 
     }
     public void Can_move(){
-        can_move = !can_move;
+        can_move = true;
     }
     void Update()
     {  

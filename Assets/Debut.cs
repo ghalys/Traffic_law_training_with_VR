@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Debut : MonoBehaviour
@@ -9,7 +11,8 @@ public class Debut : MonoBehaviour
     public GameObject carcomponent;
     public PauseManager pause_manager;
     public float spawnDistance = 2 ;
-
+    public String msg_debut = "";
+    public TextMeshProUGUI txt;
     public float hauteur = 2 ;
 
     // Start is called before the first frame update
@@ -20,7 +23,10 @@ public class Debut : MonoBehaviour
         StartPannel.transform.LookAt(player.transform.position);
         StartPannel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
         StartPannel.transform.Rotate(0, 180, 0);
+        txt.text = msg_debut;
+
     }
+    
 
     public void commencer() {
         StartPannel.SetActive(false) ;

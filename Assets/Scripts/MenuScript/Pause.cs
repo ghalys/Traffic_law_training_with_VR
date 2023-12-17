@@ -9,16 +9,7 @@ public class Pause : MonoBehaviour
     public GameObject Parametres;
     public GameObject Sure;
     public bool ispaused ;
-
-
-    public GameObject Carcomponents ;
-
-    public GameObject RightHandJeu ;
-    public GameObject RightHandPause ;
-    public GameObject LeftHandJeu ;
-    public GameObject LeftHandPause ; 
-    public GameObject GameObjectJeu ;
-
+    public PauseManager pauseManager;
     
 
     // Start is called before the first frame update
@@ -28,14 +19,6 @@ public class Pause : MonoBehaviour
         PauseObjet.SetActive(true) ;
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
-
 
 
     public void Recommencer()
@@ -48,14 +31,8 @@ public class Pause : MonoBehaviour
     {
         PauseObjet.SetActive(false);
         ispaused = false;
-        Time.timeScale = 1;
-        Carcomponents.SetActive(true) ;
-        RightHandPause.SetActive(false) ;
-        LeftHandPause.SetActive(false) ;
-        RightHandJeu.SetActive(true) ;
-        LeftHandJeu.SetActive(true) ;
-        GameObjectJeu.SetActive(true) ;
-    }
+        pauseManager.ModeMenu(false);
+           }
 
     public void Quitter()
     {
@@ -64,10 +41,7 @@ public class Pause : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        // Désactive le panneau actuel (pause)
         PauseObjet.SetActive(false);
-
-        // Active le panneau du menu principal
         Sure.SetActive(true);
 
     }
