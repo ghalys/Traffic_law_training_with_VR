@@ -2,19 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public enum ControlMode { simple = 1, touch = 2 }
 
 
 public class VehicleControl : MonoBehaviour
 {
+    public bool fleche = false;
+    public bool joystick =true;
+    public Transform manetteGauche;
+    public Transform manetteDroite;
+
 
   
     public ControlMode controlMode = ControlMode.simple;
     public ControllerManager managerleft;
-    public bool fleche = false;
 
-    public bool activeControl = false;
+    private bool activeControl = true;
 
 
     // Wheels Setting /////////////////////////////////
@@ -502,7 +507,18 @@ public class VehicleControl : MonoBehaviour
 
                 if (carWheels.wheels.frontWheelDrive || carWheels.wheels.backWheelDrive)
                 {
+                    if(joystick){
+
+                    float altitudeDifference = manetteGauche.position.y - manetteDroite.position.y;
+                    float sensitivity =3f;
+                    float normalizedAltitudeDifference = Mathf.Clamp(altitudeDifference * sensitivity, -1f, 1f);
+                    steer = Mathf.MoveTowards(steer, normalizedAltitudeDifference, 0.05f);
+                    }
+                    else{
+
                     steer = Mathf.MoveTowards(steer, Input.GetAxis("Horizontal"), 0.2f);
+                    }
+
                     // steer = -0.5f;
                     // brake = Input.GetButton("Jump");
                     if (fleche)

@@ -391,13 +391,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e935d91a386dcc646bf50d6a492ded8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PriorityRespect: 1
-  PriorityCheck: 0
+  fleche: 0
+  joystick: 1
+  manetteGauche: {fileID: 0}
+  manetteDroite: {fileID: 0}
   controlMode: 1
   managerleft: {fileID: 7308750231284021678}
-  fleche: 0
-  activeControl: 1
-  fail_menu: {fileID: 0}
   carWheels:
     wheels:
       frontWheelDrive: 1
@@ -502,6 +501,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tago: End
+  PriorityRespect: 1
+  PriorityCheck: 0
+  fail_menu: {fileID: 0}
 --- !u!1 &3277334950601402222
 GameObject:
   m_ObjectHideFlags: 0
