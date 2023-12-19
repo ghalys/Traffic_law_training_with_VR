@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53345745336019986, guid: 775b6c9e74209964b98c3ae1c68a432d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2015183
+      value: -1.2015183
       objectReference: {fileID: 0}
     - target: {fileID: 53345745336019986, guid: 775b6c9e74209964b98c3ae1c68a432d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -275,6 +275,11 @@ PrefabInstance:
     - target: {fileID: 2601293766189818868, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179423993196462431, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
+      propertyPath: msg_debut
+      value: "L'objectif de cette situation est de rejoindre la ligne d'arriv\xE9e
+        qui se trouve tout droit apr\xE8s le rond-point"
       objectReference: {fileID: 0}
     - target: {fileID: 7392484124666885893, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -544,6 +549,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -98.7
       objectReference: {fileID: 0}
+    - target: {fileID: 212407655633195891, guid: cdf073b461cbbf5429ed9771672d7d9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 659837297293831997, guid: cdf073b461cbbf5429ed9771672d7d9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.65
@@ -619,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 5712521442731264299, guid: cdf073b461cbbf5429ed9771672d7d9c, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717537635018706163, guid: cdf073b461cbbf5429ed9771672d7d9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6048428649477957976, guid: cdf073b461cbbf5429ed9771672d7d9c, type: 3}
       propertyPath: m_Name
@@ -1028,7 +1041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8952848030259937589, guid: 94106d0f7b8e6584daa6110c1c9b406b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.30312
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8952848030259937589, guid: 94106d0f7b8e6584daa6110c1c9b406b, type: 3}
       propertyPath: m_LocalPosition.z
