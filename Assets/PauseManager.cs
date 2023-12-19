@@ -14,9 +14,6 @@ public class PauseManager : MonoBehaviour
 
     public Transform player;
 
-    public float spawnDistance = 2 ;
-
-    public float hauteur = 2 ;
 
     public bool ispaused=true ;
 
@@ -83,12 +80,12 @@ public class PauseManager : MonoBehaviour
             // Activer/désactiver le panneau Pause
             pausePanel.SetActive(true);
             ispaused = true;
-            pausePanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
-            pausePanel.transform.LookAt(new Vector3(2 * pausePanel.transform.position.x - player.position.x, pausePanel.transform.position.y, 2 * pausePanel.transform.position.z - player.position.z));
-            ParameterPanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
-            ParameterPanel.transform.LookAt(new Vector3(2 * ParameterPanel.transform.position.x - player.position.x, ParameterPanel.transform.position.y, 2 * ParameterPanel.transform.position.z - player.position.z));     
-            SurePanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
-            SurePanel.transform.LookAt(new Vector3(2 * SurePanel.transform.position.x - player.position.x, SurePanel.transform.position.y, 2 * SurePanel.transform.position.z - player.position.z));                   
+            // pausePanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+            // pausePanel.transform.LookAt(new Vector3(2 * pausePanel.transform.position.x - player.position.x, pausePanel.transform.position.y, 2 * pausePanel.transform.position.z - player.position.z));
+            // ParameterPanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+            // ParameterPanel.transform.LookAt(new Vector3(2 * ParameterPanel.transform.position.x - player.position.x, ParameterPanel.transform.position.y, 2 * ParameterPanel.transform.position.z - player.position.z));     
+            // SurePanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+            // SurePanel.transform.LookAt(new Vector3(2 * SurePanel.transform.position.x - player.position.x, SurePanel.transform.position.y, 2 * SurePanel.transform.position.z - player.position.z));                   
             ModeMenu(true);
         }
 

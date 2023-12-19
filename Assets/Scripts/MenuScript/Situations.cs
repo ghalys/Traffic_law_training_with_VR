@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 public class Situations : MonoBehaviour
 {
     public GameObject situations ; 
-    public GameObject Menu;
  
     public void GoMenu(){
         situations.SetActive(false) ;
-        Menu.SetActive(true);
+        // Menu.SetActive(true);
+        SceneManager.LoadScene("debut");
+
 
     }
 

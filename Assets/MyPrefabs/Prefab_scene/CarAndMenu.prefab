@@ -40,6 +40,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2601293766189818868}
     m_Modifications:
+    - target: {fileID: 262863646822106466, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
     - target: {fileID: 1967853974229361843, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
@@ -124,6 +128,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4011504518141774612, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 4625331710839729002, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 4843573083419802126, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 5983027269425976597, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 6012771452956502199, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 7781812659493657728, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
     - target: {fileID: 8418698114764179387, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
@@ -144,6 +172,10 @@ PrefabInstance:
       propertyPath: carcomponent
       value: 
       objectReference: {fileID: 2744386263498537511}
+    - target: {fileID: 8711203074071351050, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
 --- !u!4 &1379038551112310650 stripped

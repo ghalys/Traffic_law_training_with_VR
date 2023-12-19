@@ -10,10 +10,6 @@ public class FailMenu : MonoBehaviour
 
     public GameObject FailedM ; 
 
-    public Transform player;
-
-    public float spawnDistance = 2 ;
-    public float hauteur = 2 ;
 
     public TextMeshProUGUI txt;
     public PauseManager pauseManager;
@@ -22,12 +18,7 @@ public class FailMenu : MonoBehaviour
     void Start()
     {
       FailedM.SetActive(true) ;  
-      // FailedM.transform.LookAt(player.transform.position);
-      // FailedM.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
-      // FailedM.transform.Rotate(0, 180, 0);
-      FailedM.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
-      FailedM.transform.LookAt(new Vector3(2 * FailedM.transform.position.x - player.position.x, FailedM.transform.position.y, 2 * FailedM.transform.position.z - player.position.z));                   
-            
+      
       pauseManager.ModeMenu(true);
     }
 
