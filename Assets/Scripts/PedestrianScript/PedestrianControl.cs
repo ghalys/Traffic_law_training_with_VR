@@ -41,7 +41,6 @@ public class PedestrianControl : MonoBehaviour
     }
     void roam()
     {
-        Debug.Log(Vector3.Distance(transform.position,PathPoints[index].position));
         
         if (Vector3.Distance(transform.position,PathPoints[index].position) < minimum_distance){
             if (index + 1 != PathPoints.Length){

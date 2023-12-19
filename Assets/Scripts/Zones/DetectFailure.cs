@@ -21,14 +21,17 @@ public class DetectFailure : MonoBehaviour
             fail_menu.SetMessageCollision(collision.gameObject.name);
         }
     }
+        
         public void Priority()
     {
         this.PriorityRespect = false;
     }
+
     public void Exited(){
             fail_menu.gameObject.SetActive(true);
             fail_menu.SetMessageExitedRoad();
         }
+        
     public void PriorityFinalCheck()
     {
         if (this.PriorityRespect==true) { 
