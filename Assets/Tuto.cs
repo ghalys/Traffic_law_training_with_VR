@@ -21,9 +21,12 @@ public class Tuto : MonoBehaviour
         if(show_tuto){
         Time.timeScale = 0;
         carcomponent.SetActive(false);
-        TutoPannel.transform.LookAt(player.transform.position);
-        TutoPannel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
-        TutoPannel.transform.Rotate(0, 180, 0);
+        // TutoPannel.transform.LookAt(player.transform.position);
+        // TutoPannel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
+        // TutoPannel.transform.Rotate(0, 180, 0);
+        TutoPannel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+      TutoPannel.transform.LookAt(new Vector3(2 * TutoPannel.transform.position.x - player.position.x, TutoPannel.transform.position.y, 2 * TutoPannel.transform.position.z - player.position.z));                   
+            
         }
         else{
             TutoPannel.SetActive(false) ;        

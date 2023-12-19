@@ -7,21 +7,6 @@ public class Sure : MonoBehaviour
 {
     public GameObject Pause ;
     public GameObject Suree ;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void Oui ()
-    {
-        SceneManager.LoadScene("debut");
-    }
 
     public void Non() 
     {

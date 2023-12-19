@@ -47,12 +47,7 @@ public class FailMenu : MonoBehaviour
       txt.text = "Vous n'avez pas respecté la règle de la priorité à droite";
     }
     
-    public void QuitterF(){
-        SceneManager.LoadScene("debut"); 
 
-    }
-    public void Recommencer(){
-             SceneManager.LoadScene("PrioritéV2"); 
-   
-    }
+
+    
 }

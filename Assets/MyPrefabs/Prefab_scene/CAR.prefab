@@ -392,9 +392,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fleche: 0
-  joystick: 1
-  manetteGauche: {fileID: 0}
-  manetteDroite: {fileID: 0}
+  joystick: 0
+  manetteGauche: {fileID: 2707305583398060234}
+  manetteDroite: {fileID: 6235955571693128164}
   controlMode: 1
   managerleft: {fileID: 7308750231284021678}
   carWheels:
@@ -14295,6 +14295,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87dad889b9a12a447add1784f415dcd5, type: 3}
+--- !u!4 &2707305583398060234 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1782506360951794214, guid: 87dad889b9a12a447add1784f415dcd5, type: 3}
+  m_PrefabInstance: {fileID: 4408729378338925292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6235955571693128164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7756435025047544584, guid: 87dad889b9a12a447add1784f415dcd5, type: 3}
+  m_PrefabInstance: {fileID: 4408729378338925292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6988657024112586995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6760543557376580127, guid: 87dad889b9a12a447add1784f415dcd5, type: 3}

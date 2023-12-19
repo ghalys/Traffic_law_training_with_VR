@@ -918,15 +918,8 @@ MonoBehaviour:
   player: {fileID: 0}
   spawnDistance: 2
   hauteur: 2
-  ispaused: 1
-  listeDeGameObjects: []
-  body: {fileID: 0}
-  components: {fileID: 0}
-  Board: {fileID: 0}
-  wheel1: {fileID: 0}
-  wheel2: {fileID: 0}
-  wheel3: {fileID: 0}
-  wheel4: {fileID: 0}
+  txt: {fileID: 0}
+  pauseManager: {fileID: 0}
 --- !u!1 &4520593467987772172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +1828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fc2048874adef408afaf3ab27c141d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundLevel: 0
+  buttons: []
   mute: {fileID: 6202540493650657068}
   button1: {fileID: 6202540492722436368}
   button2: {fileID: 6202540493364234877}
@@ -1867,7 +1860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fc2048874adef408afaf3ab27c141d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundLevel: 0
+  buttons: []
   mute: {fileID: 6202540493650657068}
   button1: {fileID: 6202540492722436368}
   button2: {fileID: 6202540493364234877}
@@ -1962,7 +1955,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6202540491938272395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,8 +2089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b07bd9428abbac4f8de9a10e3d5a4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  situations: {fileID: 0}
   Menu: {fileID: 0}
-  Situationss: {fileID: 6202540491957420612}
 --- !u!1 &6202540492027490313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,9 +2723,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f15a2e537b947478f0f961b1ef8fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bravoo: {fileID: 6202540492183439238}
+  BravoPanel: {fileID: 0}
   Situations: {fileID: 6202540491957420612}
-  Menu: {fileID: 0}
+  pauseManager: {fileID: 0}
+  player: {fileID: 0}
+  spawnDistance: 2
+  hauteur: 2
+  change: 0
 --- !u!1 &6202540492335205731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,18 +3229,7 @@ MonoBehaviour:
   Parametres: {fileID: 6202540491937916799}
   Sure: {fileID: 6202540493469940325}
   ispaused: 0
-  body: {fileID: 0}
-  components: {fileID: 0}
-  Board: {fileID: 0}
-  wheel1: {fileID: 0}
-  wheel2: {fileID: 0}
-  wheel3: {fileID: 0}
-  wheel4: {fileID: 0}
-  RightHandJeu: {fileID: 0}
-  RightHandPause: {fileID: 0}
-  LeftHandJeu: {fileID: 0}
-  LeftHandPause: {fileID: 0}
-  GameObjectJeu: {fileID: 0}
+  pauseManager: {fileID: 0}
 --- !u!1 &6202540492460039026
 GameObject:
   m_ObjectHideFlags: 0

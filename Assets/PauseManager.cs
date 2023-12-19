@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 //using UnityEngine.Rendering.PostProcessing;
 
 public class PauseManager : MonoBehaviour
@@ -91,13 +92,14 @@ public class PauseManager : MonoBehaviour
             ModeMenu(true);
         }
 
-        // Activer/désactiver l'effet de flou
-       // if (postProcessVolume != null)
-       // {
-           // postProcessVolume.enabled = !postProcessVolume.enabled;
-       // }
-
-        // Mettez ici d'autres actions que vous souhaitez effectuer lors de la pause
+       
+    }
+    public void Recommencer(){
+        string nomSceneActuelle = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(nomSceneActuelle);   
+    }
+    public void MainMenu(){
+        SceneManager.LoadScene("debut"); 
     }
 
 

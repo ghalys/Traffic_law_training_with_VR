@@ -21,11 +21,6 @@ public class Pause : MonoBehaviour
     }
 
 
-    public void Recommencer()
-    {
-        SceneManager.LoadScene("PrioritéV2"); 
-        //ajouter une script pour passer à la scene du jeu 
-    }
 
     public void Reprendre()
     {
