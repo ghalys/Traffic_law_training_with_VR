@@ -22,14 +22,20 @@ public class FailMenu : MonoBehaviour
     void Start()
     {
       FailedM.SetActive(true) ;  
-      FailedM.transform.LookAt(player.transform.position);
-      FailedM.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
-      FailedM.transform.Rotate(0, 180, 0);
+      // FailedM.transform.LookAt(player.transform.position);
+      // FailedM.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur,0);
+      // FailedM.transform.Rotate(0, 180, 0);
+      FailedM.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+      FailedM.transform.LookAt(new Vector3(2 * FailedM.transform.position.x - player.position.x, FailedM.transform.position.y, 2 * FailedM.transform.position.z - player.position.z));                   
+            
       pauseManager.ModeMenu(true);
     }
 
     public void SetMessageCollisionRobot(){
-      txt.text = "Accident, Game over";
+      txt.text = "Accident...";
+    } 
+    public void SetMessageCollisionRobotEtPriorite(){
+      txt.text = "Accident... Vous n'avez pas respecté la priorité à droite";
     } 
     public void SetMessageCollision(String name){
       txt.text = "Attention, vous avez touché "+ name;

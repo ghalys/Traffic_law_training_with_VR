@@ -10,7 +10,7 @@ public enum ControlMode { simple = 1, touch = 2 }
 public class VehicleControl : MonoBehaviour
 {
     public bool fleche = false;
-    public bool joystick =true;
+    public bool joystick =GameManager.conduite_joystick;
     public Transform manetteGauche;
     public Transform manetteDroite;
 
@@ -507,8 +507,7 @@ public class VehicleControl : MonoBehaviour
 
                 if (carWheels.wheels.frontWheelDrive || carWheels.wheels.backWheelDrive)
                 {
-                    if(joystick){
-
+                    if(!joystick){
                     float altitudeDifference = manetteGauche.position.y - manetteDroite.position.y;
                     float sensitivity =3f;
                     float normalizedAltitudeDifference = Mathf.Clamp(altitudeDifference * sensitivity, -1f, 1f);
@@ -1063,6 +1062,11 @@ public class VehicleControl : MonoBehaviour
         Gizmos.DrawCube(Vector3.up/1.5f, new Vector3(2.5f, 2.0f, 6));
         Gizmos.DrawSphere(carSetting.shiftCentre / transform.lossyScale.x, 0.2f);
 
+    }
+
+    public void Change_Conduite(){
+        joystick = !joystick;
+        GameManager.Change_conduite();
     }
 
 

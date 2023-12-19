@@ -10,6 +10,9 @@ public static class GameManager
     public static bool modeLibre = false;
     public static int index_situation = 0;
     public static int max_sit = 3;
+    public static bool conduite_joystick = false;
+    public static int soundLevel = 2; // Niveau de son actuel
+
     static GameManager (){
     
     maListe.Add("PrioritéV2");
@@ -17,9 +20,14 @@ public static class GameManager
     maListe.Add("Rond Point");
     // maListe.Add("Element 3");
     }
+    public static void Change_sound(int sound){
+        soundLevel = sound;
+    }
+    public static void Change_conduite(){
+        conduite_joystick = !conduite_joystick;
+    }
     public static void scene_suivante(){
         if (index_situation<max_sit){
-            Debug.Log(index_situation);
             SceneManager.LoadScene(maListe[index_situation]);
             index_situation++;
         }

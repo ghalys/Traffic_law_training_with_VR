@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    public float soundLevel = 0.0f; // Niveau de son actuel
+    // public int soundLevel = 0; // Niveau de son actuel
+    public List<Button> buttons = new List<Button>();
     public Button mute ;
     public Button button1; // Référence au bouton 1
     public Button button2; // Référence au bouton 2
@@ -16,76 +18,25 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        // Assurez-vous que le son est configuré au démarrage
-        SetSoundLevel(soundLevel);
+        buttons.Add(button1);
+        buttons.Add(button2);
+        buttons.Add(button3);
+        buttons.Add(button4);
+        SetSoundLevelMenu(GameManager.soundLevel);
     }
-    public void SetSoundLevel0()
-    {
-        soundLevel = 0.0f;
-        SetSoundLevel(soundLevel);
-
-        // Changez la couleur des boutons en conséquence
-        button1.image.color = inactiveColor;
-        button2.image.color = inactiveColor; 
-        button3.image.color = inactiveColor;
-        button4.image.color = inactiveColor;
+    public void SetSoundLevelMenu(int sound){
+            for (int k=0;k<buttons.Count;k++){
+                if(k<=sound-1){
+                    buttons[k].image.color = activeColor;
+                }
+                else{
+                    buttons[k].image.color = inactiveColor;
+                }
+            }
+            SetSoundLevel(sound);
+            GameManager.Change_sound(sound);
     }
-
-    public void SetSoundLevel1()
-    {
-        soundLevel = 1.0f;
-        SetSoundLevel(soundLevel);
-
-        // Changez la couleur des boutons en conséquence
-        button1.image.color = activeColor;
-        button2.image.color = inactiveColor;
-        button3.image.color = inactiveColor;
-        button4.image.color = inactiveColor;
-    }
-
-    public void SetSoundLevel2()
-    {
-        soundLevel = 2.0f;
-        SetSoundLevel(soundLevel);
-
-        // Changez la couleur des boutons en conséquence
-        button1.image.color = activeColor;
-        button2.image.color = activeColor;
-        button3.image.color = inactiveColor;
-        button4.image.color = inactiveColor;
-    }
-
-    public void SetSoundLevel3()
-    {
-        soundLevel = 3.0f;
-        SetSoundLevel(soundLevel);
-
-        // Changez la couleur des boutons en conséquence
-        button1.image.color = activeColor;
-        button2.image.color = activeColor;
-        button3.image.color = activeColor;
-        button4.image.color = inactiveColor;
-    
-    }
-
-    public void SetSoundLevel4()
-    {
-        soundLevel = 4.0f;
-        SetSoundLevel(soundLevel);
-
-        // Changez la couleur des boutons en conséquence
-        button1.image.color = activeColor;
-        button2.image.color = activeColor;
-        button3.image.color = activeColor;
-        button4.image.color = activeColor;
-
-        
-        
-    }
-
-
-    // Implémentez SetSoundLevel pour ajuster le son en fonction du niveau
-    void SetSoundLevel(float level)
+    void SetSoundLevel(int level)
     {
          AudioListener.volume = level;
     }

@@ -21,11 +21,13 @@ public class Bravo : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 0;
-        BravoPanel.transform.LookAt(player.transform.position);
-        BravoPanel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
-        BravoPanel.transform.Rotate(0, 180, 0);
+        // BravoPanel.transform.LookAt(player.transform.position);
+        // BravoPanel.transform.position = player.position + player.forward * spawnDistance + new Vector3(0, hauteur, 0);
+        // BravoPanel.transform.Rotate(0, 180, 0);
         pauseManager.ModeMenu(true);
+        BravoPanel.transform.position=player.position + new Vector3(player.forward.x,hauteur,player.forward.z).normalized*spawnDistance ;
+      BravoPanel.transform.LookAt(new Vector3(2 * BravoPanel.transform.position.x - player.position.x, BravoPanel.transform.position.y, 2 * BravoPanel.transform.position.z - player.position.z));                   
+            
 
     }
     

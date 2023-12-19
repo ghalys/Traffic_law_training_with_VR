@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fc2048874adef408afaf3ab27c141d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundLevel: 0
+  buttons: []
   mute: {fileID: 1079930371}
   button1: {fileID: 2068317976}
   button2: {fileID: 2065020610}
@@ -305,12 +305,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40855883}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetSoundLevel4
-        m_Mode: 1
+        m_MethodName: SetSoundLevelMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2080,7 +2080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b07bd9428abbac4f8de9a10e3d5a4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Situationss: {fileID: 698915490}
+  situations: {fileID: 698915490}
+  Menu: {fileID: 912210774}
 --- !u!114 &698915493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3088,8 +3089,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40855883}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetSoundLevel0
-        m_Mode: 1
+        m_MethodName: SetSoundLevelMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5406,12 +5407,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40855883}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetSoundLevel2
-        m_Mode: 1
+        m_MethodName: SetSoundLevelMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5561,12 +5562,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40855883}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetSoundLevel1
-        m_Mode: 1
+        m_MethodName: SetSoundLevelMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5674,12 +5675,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40855883}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: SetSoundLevel3
-        m_Mode: 1
+        m_MethodName: SetSoundLevelMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6121,6 +6122,10 @@ PrefabInstance:
     - target: {fileID: 401628203495540423, guid: 00fda4a8354778d4db7106e00b35bc1e, type: 3}
       propertyPath: m_Name
       value: LeftHand Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 401628203495540423, guid: 00fda4a8354778d4db7106e00b35bc1e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00fda4a8354778d4db7106e00b35bc1e, type: 3}
