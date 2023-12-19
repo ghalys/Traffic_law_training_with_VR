@@ -22,6 +22,7 @@ public class Situations : MonoBehaviour
 
     }
     public void Situation3(){
+        SceneManager.LoadScene("SceneBonde");
         
     }
 }

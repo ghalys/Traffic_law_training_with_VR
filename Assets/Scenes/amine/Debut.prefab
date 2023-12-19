@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6288647103053339240
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93,7 +93,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartPannel: {fileID: 6288647103053339236}
   player: {fileID: 0}
+  carcomponent: {fileID: 0}
+  pause_manager: {fileID: 0}
   spawnDistance: 6
+  msg_debut: 
+  txt: {fileID: 0}
   hauteur: 0.5
 --- !u!1 &6288647103250754547
 GameObject:

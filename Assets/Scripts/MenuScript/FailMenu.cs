@@ -49,4 +49,11 @@ public class FailMenu : MonoBehaviour
              SceneManager.LoadScene("PrioritéV2"); 
    
     }
+    public void SetMessageNoLeftSignal(){
+        txt.text = "Vous n'avez pas activé le signal.";
+    }
+    public void RecommencerSituation3(){
+             SceneManager.LoadScene("SceneBonde"); 
+   
+    }
 }

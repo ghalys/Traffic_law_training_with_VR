@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+
 public class DetectFailure : MonoBehaviour
  
 {
@@ -8,6 +9,7 @@ public class DetectFailure : MonoBehaviour
     public bool PriorityRespect = true;
     public bool PriorityCheck = false;
     public FailMenu fail_menu;
+
 
 
     void OnCollisionEnter(Collision collision)
@@ -41,4 +43,5 @@ public class DetectFailure : MonoBehaviour
         }
 
     }
+
 }

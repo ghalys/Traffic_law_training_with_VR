@@ -7,6 +7,7 @@ public class Clignotant : MonoBehaviour
     public bool clignotantActif = false;
     private float tempsProchainClignotement;
     private Renderer rend;
+    public FailMenu fail_menu;
 
     void Start()
     {
@@ -36,6 +37,15 @@ public class Clignotant : MonoBehaviour
         else{
             rend.enabled = clignotantActif;
 
+        }
+    }
+ 
+public void CheckLeftSignal()
+    {
+        if (!this.clignotantActif)
+        {
+            fail_menu.gameObject.SetActive(true);
+            fail_menu.SetMessageNoLeftSignal();
         }
     }
 }
