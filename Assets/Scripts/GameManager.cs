@@ -17,7 +17,7 @@ public static class GameManager
     
     maListe.Add("PrioritéV2");
     maListe.Add("Rond Point");
-    maListe.Add("Scene Bonde");
+    maListe.Add("SceneBonde");
     }
     public static void Change_sound(int sound){
         soundLevel = sound;
@@ -32,6 +32,7 @@ public static class GameManager
         }
         else{
             SceneManager.LoadScene("Debut");
+            modeLibre = false;
 
         }
     }

@@ -44,6 +44,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 793294043962697715, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: debut
+      value: 
+      objectReference: {fileID: 6095520864537066048}
+    - target: {fileID: 793294043962697715, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: carcomponent
+      value: 
+      objectReference: {fileID: 2744386263498537511}
     - target: {fileID: 1967853974229361843, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
@@ -148,10 +156,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 7293241129482316244, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
     - target: {fileID: 7781812659493657728, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 8100820889567644095, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 8131074909722431622, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: carcomponent
+      value: 
+      objectReference: {fileID: 2744386263498537511}
+    - target: {fileID: 8131074909722431623, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e79542c3a05a8494785486dbe5c50d03, type: 3}
     - target: {fileID: 8418698114764179387, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
@@ -164,6 +188,14 @@ PrefabInstance:
       propertyPath: carcomponent
       value: 
       objectReference: {fileID: 2744386263498537511}
+    - target: {fileID: 8506879921001192900, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 8705533085814085636, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e79542c3a05a8494785486dbe5c50d03, type: 3}
     - target: {fileID: 8705533085814085637, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
       propertyPath: player
       value: 
@@ -176,6 +208,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7392484124666885893}
+    - target: {fileID: 9101493968168053829, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+      propertyPath: carcomponent
+      value: 
+      objectReference: {fileID: 2744386263498537511}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
 --- !u!4 &1379038551112310650 stripped
@@ -197,6 +233,11 @@ MonoBehaviour:
 --- !u!1 &4339259574193586537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2052162780606024148, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
+  m_PrefabInstance: {fileID: 2324590484339116221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6095520864537066048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8418698115556569853, guid: 7858ef2bf61c48648a9dc1a6f55a7612, type: 3}
   m_PrefabInstance: {fileID: 2324590484339116221}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5470765114828120427
@@ -306,6 +347,10 @@ PrefabInstance:
       propertyPath: fleche
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5112578520440665410, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
+      propertyPath: failmenu
+      value: 
+      objectReference: {fileID: 4339259574193586535}
     - target: {fileID: 5112578520440665410, guid: 122073faa95d7fd499daff412885a2b8, type: 3}
       propertyPath: joystick
       value: 0

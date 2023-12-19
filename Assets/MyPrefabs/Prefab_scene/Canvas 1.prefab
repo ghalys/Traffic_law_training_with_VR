@@ -915,9 +915,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FailedM: {fileID: 4520593467748633061}
-  player: {fileID: 0}
-  spawnDistance: 2
-  hauteur: 2
   txt: {fileID: 0}
   pauseManager: {fileID: 0}
 --- !u!1 &4520593467987772172
@@ -2090,7 +2087,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   situations: {fileID: 0}
-  Menu: {fileID: 0}
 --- !u!1 &6202540492027490313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,10 +2722,6 @@ MonoBehaviour:
   BravoPanel: {fileID: 0}
   Situations: {fileID: 6202540491957420612}
   pauseManager: {fileID: 0}
-  player: {fileID: 0}
-  spawnDistance: 2
-  hauteur: 2
-  change: 0
 --- !u!1 &6202540492335205731
 GameObject:
   m_ObjectHideFlags: 0

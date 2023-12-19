@@ -11,10 +11,9 @@ public class FinalLineDetection : MonoBehaviour
     {
         if (other.CompareTag("Vehicle"))
         {
-            if (vehicule.PriorityCheck == true)
-            {
+            
                 bravo.SetActive(true);
-                }
+                
         }
     }
 }

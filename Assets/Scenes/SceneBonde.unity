@@ -1593,6 +1593,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5806823505644329019, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
+      propertyPath: debut
+      value: 
+      objectReference: {fileID: 839099989}
     - target: {fileID: 6179423993196462431, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
       propertyPath: msg_debut
       value: "L'objectif de cette situation est de rejoindre la ligne d'arriv\xE9e
@@ -2107,6 +2111,11 @@ Transform:
   m_Father: {fileID: 113012677}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &839099989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3116704249268744012, guid: 59f6b75401b23094c969217b523f2d0d, type: 3}
+  m_PrefabInstance: {fileID: 597346949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &867978958
 GameObject:
   m_ObjectHideFlags: 0

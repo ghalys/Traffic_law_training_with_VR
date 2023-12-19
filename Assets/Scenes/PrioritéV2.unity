@@ -1612,11 +1612,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5377912991336875929, guid: 42e06a5f6ca965649ba8b5a7eaa9b3e7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.4
+      value: 11.92
       objectReference: {fileID: 0}
     - target: {fileID: 5377912991336875929, guid: 42e06a5f6ca965649ba8b5a7eaa9b3e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 5377912991336875929, guid: 42e06a5f6ca965649ba8b5a7eaa9b3e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1732,16 +1732,48 @@ PrefabInstance:
       value: VehicleRobot
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1235335719}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1235335719}
     - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: est_sorti
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PriorityFinalCheck
+      value: Priority
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DetectFailure, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DetectFailure, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186795334561546016, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
+      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546017, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_Name
@@ -1753,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.8
+      value: 19.55
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalScale.y
@@ -1761,11 +1793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalScale.z
-      value: 9.76
+      value: 14.9
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1773,7 +1805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 7186795334561546022, guid: d12b38c2cf7dcd44bb81aa5aee846751, type: 3}
       propertyPath: m_LocalRotation.w

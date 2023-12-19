@@ -25,6 +25,9 @@ public class FailMenu : MonoBehaviour
     public void SetMessageCollisionRobot(){
       txt.text = "Accident...";
     } 
+    public void SetMessageSpeed(){
+      txt.text = "Attention, la vitesse maximale autorisée en ville est de 60km/h";
+    } 
     public void SetMessageNoLeftSignal(){
       txt.text = "Vous n'avez pas activé le clignotant. Rappel, le clignotant se trouve sur la gachette latérale du controlleur";
     }

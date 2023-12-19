@@ -7,14 +7,14 @@ public class Tuto : MonoBehaviour
     public GameObject TutoPannel ;
     public GameObject carcomponent;
     public bool show_tuto ;
+    public bool aide_ignorer_tuto;
 
     public   GameObject debut ;
-    public bool change = false;
 
     void Start()
     {
         show_tuto = GameManager.showTuto;
-        if(show_tuto){
+        if(show_tuto||aide_ignorer_tuto){
         Time.timeScale = 0;
         carcomponent.SetActive(false);
         }
@@ -28,8 +28,8 @@ public class Tuto : MonoBehaviour
         GameManager.showTuto = false;
     }
 
-    public void passer() {
+    public void passer(GameObject ProchainPanel) {
         TutoPannel.SetActive(false) ;
-        debut.SetActive(true) ;
+        ProchainPanel.SetActive(true) ;
     }
 }

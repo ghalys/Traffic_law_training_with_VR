@@ -4,12 +4,14 @@ using UnityEngine;
 public class DetectFailure : MonoBehaviour
  
 {
-    public string tago;
     public bool PriorityRespect = true;
     public bool PriorityCheck = false;
+    public bool est_passe = false;
     public FailMenu fail_menu;
 
-
+    public void est_sorti(){
+        est_passe = true;
+    }
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag=="VehicleRobot"){
@@ -24,7 +26,7 @@ public class DetectFailure : MonoBehaviour
         }
         else if ( collision.gameObject.tag !="End"){ //tout autre objet sauf la ligne d'arrivée
             fail_menu.gameObject.SetActive(true);
-            fail_menu.SetMessageCollision(collision.gameObject.tag);
+            fail_menu.SetMessageCollision(collision.gameObject.name);
             collision.gameObject.SetActive(false);
         }
     }
@@ -41,10 +43,11 @@ public class DetectFailure : MonoBehaviour
         
     public void PriorityFinalCheck()
     {
-        if (this.PriorityRespect==true) { 
-            this.PriorityCheck = true;
+        if (est_passe) { 
+            this.PriorityRespect = true;
         } else
         {
+            this.PriorityRespect = false;
             fail_menu.gameObject.SetActive(true);
             fail_menu.SetMessagePriorite_ADroite();
 

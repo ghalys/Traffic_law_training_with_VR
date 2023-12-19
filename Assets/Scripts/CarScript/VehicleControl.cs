@@ -14,6 +14,9 @@ public class VehicleControl : MonoBehaviour
     public Transform manetteGauche;
     public Transform manetteDroite;
 
+    public float Max_speed_city =60f; 
+    public FailMenu failmenu;
+
 
   
     public ControlMode controlMode = ControlMode.simple;
@@ -471,7 +474,10 @@ public class VehicleControl : MonoBehaviour
 
         // speed of car
         speed = myRigidbody.velocity.magnitude * 2.7f;
-
+        if (speed>Max_speed_city){
+            failmenu.gameObject.SetActive(true);
+            failmenu.SetMessageSpeed();
+        }
 
 
         if (speed < lastSpeed - 10 && slip < 10)
