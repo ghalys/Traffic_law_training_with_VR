@@ -7,6 +7,7 @@ public class Apparition : MonoBehaviour
 {
     
     [SerializeField] string tagFilter;
+    
     [SerializeField] UnityEvent onTriggerEnter;
     [SerializeField] UnityEvent onTriggerExit;
     public void OnTriggerEnter(Collider obj)

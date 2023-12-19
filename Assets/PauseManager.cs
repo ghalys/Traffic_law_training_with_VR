@@ -17,8 +17,6 @@ public class PauseManager : MonoBehaviour
 
     public bool ispaused=true ;
 
-    
-
     public GameObject Carcomponents ;
 
     public GameObject RightHandJeu ;

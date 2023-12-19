@@ -24,7 +24,7 @@ public class DetectFailure : MonoBehaviour
         }
         else if ( collision.gameObject.tag !="End"){ //tout autre objet sauf la ligne d'arrivée
             fail_menu.gameObject.SetActive(true);
-            fail_menu.SetMessageCollision(collision.gameObject.name);
+            fail_menu.SetMessageCollision(collision.gameObject.tag);
             collision.gameObject.SetActive(false);
         }
     }

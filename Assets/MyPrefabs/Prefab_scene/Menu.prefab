@@ -1536,7 +1536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6202540493717960896, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
       propertyPath: m_text
-      value: Choisir situation suivante
+      value: Autre Situation
       objectReference: {fileID: 0}
     - target: {fileID: 6202540493730753844, guid: 259d72d8ce0cc9349a18ed84ffb72c1f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

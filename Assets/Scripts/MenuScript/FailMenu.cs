@@ -25,11 +25,17 @@ public class FailMenu : MonoBehaviour
     public void SetMessageCollisionRobot(){
       txt.text = "Accident...";
     } 
+    public void SetMessageNoLeftSignal(){
+      txt.text = "Vous n'avez pas activé le clignotant. Rappel, le clignotant se trouve sur la gachette latérale du controlleur";
+    }
     public void SetMessageCollisionRobotEtPriorite(){
       txt.text = "Accident... Vous n'avez pas respecté la priorité à droite";
     } 
     public void SetMessageCollision(String name){
       txt.text = "Attention, vous avez touché "+ name;
+    }
+    public void SetMessagepassage_pieton(){
+      txt.text = "Attention, vous devez laisser la priorité aux piétons";
     }
     public void SetMessageExitedRoad(){
       txt.text = "Attention, vous êtes sorti des limites du jeu. Veuillez relire la consigne du début";

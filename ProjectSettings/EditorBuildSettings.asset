@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rond Point.unity
     guid: c01918013bdb2ca47839d96d8aa378da
+  - enabled: 1
+    path: Assets/Scenes/SceneBonde.unity
+    guid: 3d7976654bd229e499023a2d773b070a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 12e69a8de27431847abf8a89fd89d597, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: f91191eb7a2efd04da9937acc3ef2fbc, type: 2}

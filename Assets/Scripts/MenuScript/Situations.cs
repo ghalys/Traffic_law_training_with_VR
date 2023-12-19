@@ -8,7 +8,6 @@ public class Situations : MonoBehaviour
  
     public void GoMenu(){
         situations.SetActive(false) ;
-        // Menu.SetActive(true);
         SceneManager.LoadScene("debut");
 
 
@@ -23,6 +22,7 @@ public class Situations : MonoBehaviour
 
     }
     public void Situation3(){
+        SceneManager.LoadScene("SceneBonde");
         
     }
 }

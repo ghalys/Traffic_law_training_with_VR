@@ -17,8 +17,7 @@ public static class GameManager
     
     maListe.Add("PrioritéV2");
     maListe.Add("Rond Point");
-    maListe.Add("Rond Point");
-    // maListe.Add("Element 3");
+    maListe.Add("Scene Bonde");
     }
     public static void Change_sound(int sound){
         soundLevel = sound;
