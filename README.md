@@ -12,6 +12,9 @@ C# (73.1%)
 ShaderLab (23.4%)
 HLSL (3.5%)
 
+## Diagram of classes
+![diagramme](https://github.com/ghalys/Traffic_law_training_with_VR/assets/127297865/9cd3ab77-5d05-4580-a826-f3aa684f22b4)
+
 ## Getting Started
 You just need to Install Unity with version 2021.3.9f1
 Then to get a local copy up and running, follow these simple steps:
