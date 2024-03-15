@@ -2,6 +2,15 @@
 About the Project
 Traffic Law Training with VR is designed to train users in specific tests related to traffic law. This project focuses on three distinct traffic situations, with the core functions easily adaptable to create similar scenarios. Utilizing VR technology in Unity, the application is tailored for the Oculus VR headset and controllers, providing an immersive learning experience.
 
+## Some pictures from the project
+![reussite](https://github.com/ghalys/Traffic_law_training_with_VR/assets/127297865/ca9bba06-93fc-497a-80e3-dcb9742550e7)
+![echec](https://github.com/ghalys/Traffic_law_training_with_VR/assets/127297865/cfec2574-e894-4c81-8258-02ebcbbe08ba)
+
+## Little preview
+
+https://github.com/ghalys/Traffic_law_training_with_VR/assets/127297865/2d7c5b94-d4ff-415b-ad09-fe5af6e83832
+
+
 ## Features
 Three Distinct Traffic Scenarios: Targeted training in various traffic law situations.
 Immersive VR Experience: Realistic training environment in virtual reality.
