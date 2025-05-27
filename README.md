@@ -45,5 +45,6 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## Contact
 Sentissi El Idrissi Ghaly - asentissielidrissi@gmail.com
+AIT BENMESSAOUD Amine - amineabm52002@gmail.com
 
 Project Link: https://github.com/ghalys/traffic_law_training_with_VR
